@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Books</title>
+    <link rel="stylesheet" href="bulma-0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="h-image">
+        <div class="h-inner">
+            <h1>Books</h1>
+            <h2>"A book is a device to ignite the imagination." </h2>
+            <h3>Alan Bennett, The Uncommon Reader</h3>
+        </div>
+    </section>
+    <div class="container">
+        <div class="level">
+            <div class="level-item">
+                <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label" for="input-text" style="color:darksalmon;">Search : </label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                        <p class="control">
+                            <input  class="input is-danger" type="text" id="input-text" placeholder="Enter name book">
+                        </p>
+                        </div>
+                        <div class="control">
+                            <button id="search-btn" class="button is-danger is-focused">
+                                OK
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align: center">
+            <button id="adv-search-btn" class="button is-danger is-focused">
+                    Advance Search
+            </button>
+        </div>
+        <hr>
+        <div class="form-inline" id="advance-group">
+                <label for="sel1" style="text-align: left; color: darksalmon;">&nbsp;&nbsp;&nbsp;&nbsp;Select Category :&nbsp;</label>
+                    <div class="select is-danger">
+                        <select class="select is-danger" id="category-selector" style="border-color: darksalmon; color: dimgray;"></select>
+                    </div>
+                <label for="sel2" style="text-align: left; color: darksalmon;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author : &nbsp;</label>
+                    <div class="select is-danger">
+                        <select class="select is-danger" id="author-selector" style="border-color: darksalmon; color: dimgray;"></select>
+                    </div>
+                <label for="sel3" style="text-align: left; color: darksalmon;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Publisher :</label>
+                    <div class="select is-danger"> 
+                        <select class="select is-danger" id="publisher-selector" style="border-color: darksalmon; color: dimgray;"></select>
+                    </div>
+                <button id="advance-search-btn" class="button is-danger is-focused" style="background-color: darksalmon;">Search</button>
+                <hr>
+        </div>
+    
+       <table class="table">
+           <thead>
+               <tr>
+                   <th id="t-name">Name</th>
+                   <th id="t-category">Category</th>
+                   <th id="t-author">Author</th>
+                   <th id="t-publisher">Publisher</th>
+                   <th id="t-price">Price</th>
+               </tr>
+           </thead>
+           <tbody id="table"></tbody>
+       </table>
+       <p id ="message" align = "center"></p>
+       <hr>
+        <section id ="reference">
+            <h1 id="ref-h1">Reference</h1>
+            <ul >
+                <li>
+                    <a href="https://www.se-ed.com/product-category-group/%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B8%A2.aspx?nc=01&mid=1">รายะเอียดและราคาหนังสือต่างๆ</a>
+                </li>
+                <li>
+                    <a href="https://www.naiin.com/category?category_1_code=16&product_type_id=1">หนังสือหมวดหมู่คอมพิวเตอร์</a>
+                </li>
+            </ul>   
+        </section>
+    </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="myscript.js"></script>
+</body>
+</html>
